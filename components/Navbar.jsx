@@ -1,9 +1,9 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const Navbar = () => (
   <nav className="navbar_main_container">
     <div className='navbar_container'>
-      <Link href="/"><img src='/Logo.png' className='logo_img ' /></Link>
+      <Link href="/"><Image width={100} height={100} src='/Logo.png' className='logo_img ' /></Link>
       <div className='flex gap-6 '>
         <Link href="/"><h1 className='menu_text hidden md:block'>Events</h1></Link>
         <Link href="/"><h1 className='menu_text hidden md:block'>FAQ</h1></Link>
