@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 const Footer = () => (
   <footer className="pb-11 w-[100%] bg-black">
     <hr className="hr_line_footer ] " />
