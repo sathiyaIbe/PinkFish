@@ -92,6 +92,10 @@ font-family: "Integral";
     @apply text-white text-center text-[64px] leading-[24px] font-[700] font-[Integral] tracking-[3px]
 }
 
+.image_container_home{
+   height: fit-content;
+}
+
 .text-block {
     position: absolute;
     bottom: 20px;
@@ -188,4 +192,18 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(244
     left: 97%;
     top: 0%;
     width: 164px;
+}
+
+.banner_img_4{
+    left: 65%;
+    top: 75%;
+    width: 60px;
+}
+
+.banner_img_5{
+    left: 72%;
+    top: 83%;
+  
+    background-color: #F33288;
+    @apply p-1 pl-3 pr-3  rounded-2xl font-[400] font-[Sofia] text-[16px] leading-[24px]
 }

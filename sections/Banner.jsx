@@ -5,6 +5,7 @@ const Banner = () => (
       <img className="absolute banner_img_1" src="/Banner/over_banner_1.png" />
       <img className="absolute banner_img_2" src="/Banner/over_banner_2.png" />
       <img className="absolute banner_img_3" src="/Banner/over_banner_3.png" />
+      <img className="absolute banner_img_4" src="/Banner/over_banner_4.png" />
       <h1 className="banner_header self-center">stay updated</h1>
       <p className="banner_text text-center self-center">Follow us on our social media pages</p>
       <div className="flex gap-2 self-center">
