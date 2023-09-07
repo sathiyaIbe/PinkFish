@@ -47,13 +47,7 @@ module.exports = {
       2,
       1050,
     ],
-    'no-multiple-empty-lines': [
-      'error',
-      {
-        max: 1,
-        maxEOF: 1,
-      },
-    ],
+    'no-multiple-empty-lines': [2, {"max": 99999, "maxEOF": 0}],
     'no-underscore-dangle': [
       'error',
       {
