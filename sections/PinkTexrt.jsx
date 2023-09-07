@@ -1,4 +1,4 @@
-import '../styles/home.css'
+import "../styles/home.css"
 const PinkText = () => (
   <section className="horizantal_line">
     <div className="horizantal_pink_container">

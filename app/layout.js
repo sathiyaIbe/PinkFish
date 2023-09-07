@@ -1,5 +1,5 @@
-import { Footer, Navbar } from '../components';
-import '../styles/globals.css';
+import { Footer, Navbar } from "../components";
+import "../styles/globals.css";
 
 const RootLayout = ({ children }) => (
   <html lang="en">
@@ -8,7 +8,7 @@ const RootLayout = ({ children }) => (
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
     </head>
     <body>
-      <div className='min-h-screen bg-black'>
+      <div className="min-h-screen bg-black">
         <Navbar />
       {children}
       <Footer />
