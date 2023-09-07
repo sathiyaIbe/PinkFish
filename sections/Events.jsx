@@ -12,7 +12,8 @@ const Events = () => (
             <button className="event_tickets" alt="button">Buy Tickets
               <svg className="self-center ml-2 mt-1" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 9.46357L4.67453 5.78903C5.10849 5.35507 5.10849 4.64496 4.67453 4.211L1 0.536438" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              </svg></button>
+              </svg>
+              </button>
           </div>
         </div>
         {/* <div className="container">
@@ -26,14 +27,16 @@ const Events = () => (
             <button className="event_tickets2" alt="button">Buy Tickets
               <svg className="self-center ml-2 mt-1" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 9.46357L4.67453 5.78903C5.10849 5.35507 5.10849 4.64496 4.67453 4.211L1 0.536438" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              </svg></button>
+              </svg>
+              </button>
           </div>
         </div>
       </div>
       <button className="buy_ticket flex w-[15%] self-center mt-11 " type="button">see more shows
         <svg className="mt-1 ml-1 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />
-        </svg></button>
+        </svg>
+        </button>
     </div>
   </section>
 );

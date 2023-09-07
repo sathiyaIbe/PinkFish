@@ -14,7 +14,8 @@ const Gallery = () => (
           <button className="gallery_btn flex" type="button" >See More
             <svg className="mt-1 ml-1 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />
-            </svg></button>
+            </svg>
+            </button>
         </div>
         <img className="object-cover" src="/Gallery/gallery_3.png" />
       </div>

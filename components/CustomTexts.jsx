@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 export const TypingText = () => (
   <p>Typing Text</p>
