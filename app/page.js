@@ -1,4 +1,5 @@
-import { PinkText, Events, Feedback, Gallery, Hero, Banner, World } from "../sections";
+import { PinkText, Events, Gallery, Hero, Banner } from '../sections';
+
 const Page = () => (
   <div className="bg-black">
     <Hero />

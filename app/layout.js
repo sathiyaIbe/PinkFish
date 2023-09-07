@@ -1,5 +1,5 @@
-import { Footer, Navbar } from "../components";
-import "../styles/globals.css";
+import { Footer, Navbar } from '../components';
+import '../styles/globals.css';
 
 const RootLayout = ({ children }) => (
   <html lang="en">
@@ -10,11 +10,10 @@ const RootLayout = ({ children }) => (
     <body>
       <div className="min-h-screen bg-black">
         <Navbar />
-      {children}
-      <Footer />
+        {children}
+        <Footer />
       </div>
-      </body>
-      
+    </body>
   </html>
 );
 
