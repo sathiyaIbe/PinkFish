@@ -1,3 +1,4 @@
-export function scrollTop(){
-    document.documentElement.scrollTop= 0
+export function scrollTop() {
+  document.documentElement.scrollTop = 0;
+  
 }
