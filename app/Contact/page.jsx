@@ -1,6 +1,7 @@
+/* eslint-disable */
 import '../../styles/contact.css';
-const Contact = () => (
 
+const Contact = () => (
   <div className="contact_main_container  h-screen flex justify-center text-white pt-11   flex   ">
     <div className="  flex   w-[80%]">
       <div className="basis-1/2 ">
@@ -11,7 +12,7 @@ const Contact = () => (
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
           id est laborum.
-          </p>
+        </p>
         <div className="flex flex-col gap-1 ">
 
           <h1 className="contact_sub_header mt-6">email</h1>
