@@ -1,5 +1,4 @@
 import '../styles/home.css'
-
 const Banner = () => (
   <section className="text-white flex justify-center mt-11 pb-11 bg-black">
     <div className="banner_container p-6 w-5/6 pt-24 pb-24 flex flex-col self-center relative ">
@@ -15,5 +14,4 @@ const Banner = () => (
     </div>
   </section>
 );
-
 export default Banner;

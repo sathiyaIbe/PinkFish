@@ -1,5 +1,4 @@
 import '../styles/home.css'
-
 const Events = () => (
   <section id="Events" className="event_section  mt-11">
     <div className="w-[100%] flex flex-col ">
@@ -38,5 +37,4 @@ const Events = () => (
     </div>
   </section>
 );
-
 export default Events;

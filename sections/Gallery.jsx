@@ -1,5 +1,4 @@
 import '../styles/home.css'
-
 const Gallery = () => (
   <section className="mt-24">
     <div className="flex gap-4">
@@ -21,7 +20,6 @@ const Gallery = () => (
       </div>
       <div className="flex flex-col gap-4">
         <img src='/Gallery/gallery_4.png' />
-
       </div>
       <div className="flex flex-col gap-2">
         <img className="w-4/5" src='/Gallery/gallery_5.png' />
@@ -30,5 +28,4 @@ const Gallery = () => (
     </div>
   </section>
 );
-
 export default Gallery;

@@ -1,5 +1,4 @@
 import '../styles/home.css'
-
 const Hero = () => (
   <section className="hero_container flex mb-11 ">
     <div className='  header_container flex justify-center'>
@@ -14,8 +13,6 @@ const Hero = () => (
         </a>
       </div>
     </div>
-
   </section>
 );
-
 export default Hero;
