@@ -1,0 +1,33 @@
+.contact_input{
+    background-color: transparent;
+    border: 1px solid white;
+    @apply rounded p-2
+
+}
+
+.contact_label{
+    @apply text-[20px] leading-[23px] font-[400] font-[Sofia] text-white
+}
+
+.contact_submit{
+    @apply bg-[#F33288] rounded w-fit  p-2 flex text-[18px] leading-[24px] font-[Integral] text-white font-[500] ;
+
+}
+
+.contact_header{
+    @apply text-[40px] leading-[48px] font-[500] font-[Integral] text-white
+
+}
+.contact_text{
+    @apply text-[20px] leading-[24px] font-[400] font-[Sofia] text-white w-[85%]
+}
+
+.contact_sub_header{
+    @apply text-[24px] leading-[28px] font-[500] font-[Integral] text-white
+
+}
+
+.contact_main_container{
+    /* background-image: url("/contact_page_bg.png"); */
+    background: url('/blackGradient.png')  bottom no-repeat, url("/contact_page_bg.png")  top ;
+}

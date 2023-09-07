@@ -1,0 +1,191 @@
+.hero_container {
+    background-image: url('/HEROIMG.png');
+    /* background: url('/hero_blackGradient.png')  20% bottom no-repeat, url("/HEROIMG.png") 80%  top ; */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    @apply flex flex-col justify-end;
+}
+
+.hero_heading {
+    @apply text-white text-[90px] leading-[108px] font-[400]  uppercase ;
+    /* font-family:'Courier New', Courier, monospace */
+font-family: "Integral";
+}
+.header_container{
+    background-image: url('/hero_blackGradient.png');
+}
+.horizantal_line {
+
+    max-width: 99.98%
+}
+
+.horizantal_pink_container {
+    @apply bg-[#F33288] py-4;
+    transform: rotate(-1.5deg);
+    z-index: -99;
+    overflow: hidden;
+}
+
+.horizantal_text_1 {
+    font-size: 34px;
+    line-height: 30px;
+    font-weight: 400;
+    color: black;
+    -webkit-text-fill-color: #F33288;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(246, 244, 244);
+    text-transform: uppercase;
+    @apply font-[Integral];
+
+}
+
+
+.horizantal_text_2 {
+    font-size: 34px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+
+    text-transform: uppercase;
+    @apply font-[Integral];
+}
+
+.horizantal_pink_container_body {
+
+    width: 100%;
+    transform: translateX(0%);
+    /* Animation start out of the screen */
+
+    /* Add the animation */
+    animation: move 30s linear infinite
+        /* infinite make reapeat the animation indefinitely */
+    ;
+}
+
+/* Create the animation */
+@keyframes move {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.gradient_hero {
+    /* @apply h-[5vh];
+    background-image: linear-gradient(transparent, black, black, black);
+    opacity: 0.9; */
+    @apply max-h-[15vh];
+}
+
+.gradient_hero2 {
+    @apply max-h-[20vh] ;
+    background-image: linear-gradient(black, black, black, black);
+    z-index: -99;
+}
+
+
+
+.event_header {
+    @apply text-white text-center text-[64px] leading-[24px] font-[700] font-[Integral] tracking-[3px]
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container {
+    position: relative;
+}
+
+
+.event_text_date {
+    @apply text-[12px] leading-[24px] font-[400] font-[Sofia] uppercase tracking-[8px];
+}
+
+.event_text {
+    @apply text-[40px] leading-[24px] font-[500] font-[Integral];
+}
+
+.event_tickets {
+    @apply bg-[#F33288] rounded-lg w-[50%] md:w-[40%] p-2 flex text-[16px] leading-[20px] font-[Integral];
+}
+
+.event_text_date2 {
+    @apply text-[12px] leading-[24px] font-[400] font-[Sofia] uppercase tracking-[8px]
+}
+
+.event_text2 {
+    @apply text-[32px] leading-[24px] font-[500] font-[Integral]
+}
+
+.event_tickets2 {
+    @apply bg-[#F33288] rounded-lg w-[50%] md:w-[62%] p-2 flex text-[16px] leading-[20px] font-[Integral];
+}
+
+.buy_ticket {
+    background-color: #F33288;
+    @apply rounded-lg gap-2 text-white p-3;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Integral;
+}
+
+.gallery_container{
+    background-color: #F33288;
+}
+
+
+.gallery_header{
+    @apply text-[32px] leading-[24px] font-[Integral] text-white uppercase font-[500]
+}
+
+.gallery_text{
+    @apply text-[14px] leading-[24px] font-[Sofia] text-white  font-[400] w-4/5
+}
+
+.gallery_btn{
+    @apply text-[16px] leading-[20px] font-[Sofia] text-white  font-[700] bg-black text-white w-fit p-2 rounded
+
+
+}
+
+.banner_header{
+    @apply text-[80px] leading-[95px] font-[Integral] text-white uppercase font-[500]
+   
+}
+
+.banner_text{
+    @apply text-[24px] leading-[50px] font-[Sofia] text-white  font-[700]
+}
+
+.banner_container{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(244,0,134,1) 1%, rgba(246,6,129,1) 2%, rgba(246,137,175,1) 98%, rgba(239,128,175,1) 99%, rgba(0,0,0,1) 99%);
+}
+
+.banner_img_1{
+    left: 15%;
+    top: -10%;
+    width: 150px;
+}
+
+.banner_img_2{
+    left: -10%;
+    top: 80%;
+    width: 350px;
+}
+.banner_img_3{
+    left: 97%;
+    top: 0%;
+    width: 164px;
+}
