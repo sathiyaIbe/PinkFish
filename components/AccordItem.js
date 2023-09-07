@@ -1,9 +1,10 @@
 'use client';
-
+/* eslint-disable */
+import { useState } from 'react';
 import '../styles/contact.css';
 
 const AccordItem = ({ header, text }) => {
-  const [active, setActive] = useState(Boolean)
+  const [active, setActive] = useState(Boolean);
   const handleToggle = (event) => {
     event.preventDefault();
     setActive(!active);
@@ -17,8 +18,8 @@ const AccordItem = ({ header, text }) => {
             <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="18" cy="18" r="18" fill="#D9D9D9" />
               <path d="M17.777 25.2095V11.3405H19.2845V25.2095H17.777ZM11.412 19.012V17.5715H25.6495V19.012H11.412Z" fill="black" />
-            </svg> :
-            <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </svg> 
+            : <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="18" cy="18" r="18" fill="#D9D9D9" />
               <path d="M17.777 25.2095V11.3405H19.2095H17.777ZM11.412  19.012V17.5715H25.6495V19.012H11.412Z" fill="black" />
             </svg>
