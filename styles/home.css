@@ -149,7 +149,7 @@ font-family: "Integral";
 
 .event_text2 {
     @apply text-[24px] md:text-[32px] leading-[24px] font-[500] font-[Integral];
-    text-wrap: nowrap;
+   
 }
 
 .event_tickets2 {

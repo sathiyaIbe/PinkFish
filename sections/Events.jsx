@@ -3,7 +3,7 @@ const Events = () => (
   <section id="Events" className="event_section  mt-11">
     <div className="w-[100%] flex flex-col ">
       <h1 className=" event_header mb-11 mt-24">EVENTS</h1>
-      <div className="flex flex-row justify-center gap-4 self-center md:w-[90%]  image_container_home  mt-11">
+      <div className="flex flex-row justify-center gap-4 self-center md:w-[90%] w-[100%]  image_container_home  mt-11">
         <div className="container h-full ml-48 md:ml-11   md:basis-3/4 ">
           <img className="w-full hidden md:block h-fit " src="/event_1.png" />
           <img className=" object-contain h-[380px] max-w-[308px] md:hidden" src="/event_1_m.png" />
@@ -21,8 +21,8 @@ const Events = () => (
         {/* <div className="container">
         <img className="" src="/event_2.png"/>
       </div> */}
-        <div className="container   md:basis-1/4 ">
-          <img className="w-full min-h-full hidden md:block" src="/event_2.png" />
+        <div className="container   md:basis-1/4">
+          <img className="w-[100%] min-h-full hidden md:block" src="/event_2.png" />
           <img className=" max-h-[380px] max-w-[308px] md:hidden" src="/event_2.png" />
           <div className="text-block text-white flex flex-col gap-2 md:gap-4">
             <h1 className="event_text_date2">13 october 2023</h1>

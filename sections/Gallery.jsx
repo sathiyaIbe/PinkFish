@@ -130,22 +130,26 @@ return(
             </button>
         </div>
         <div className="flex gap-4 ml-3">
-          <div className="flex flex-col gap-4">
-          <img className="object-cover" src="/Gallery/gallery_1_mob.png" />
-          <img className="object-cover" src="/Gallery/gallery_3_mob.png" />
+          <div className="flex flex-col gap-4 basis-1/2">
+          <img className=" w-full h-full" src="/Gallery/gallery_1_mob.png" />
+          <img className=" w-full h-full" src="/Gallery/gallery_3_mob.png" />
 
           </div>
-          <div className="flex flex-col gap-4">
-          <img className="object-cover  w-[100%]" src="/Gallery/gallery_2_mob.png" />
-          <img className="object-cover  w-[100%] " src="/Gallery/gallery_4_mob.png" />
+          <div className="flex flex-col gap-4 basis-1/2">
+          <img className="  w-full h-full" src="/Gallery/gallery_2_mob.png" />
+          <img className="  w-full h-full " src="/Gallery/gallery_4_mob.png" />
 
           </div>
          
         </div>
-        <img className="object-contain w-[95%]  ml-2 my-4  mt-4 mb-4" src="/Gallery/gallery_5_mob.png"/>
-        <div className="flex gap-4 ml-3 ">
-        <img className="object-cover" src="/Gallery/gallery_6_mob.png" />
-          <img className="object-cover" src="/Gallery/gallery_7_mob.png" />
+        <img className=" w-full h-full ml-2 my-4 pr-3  mt-4 mb-4" src="/Gallery/gallery_5_mob.png"/>
+        <div className="flex gap-4  w-full ">
+          <div className="basis-1/2">
+        <img className="object-cover w-full h-full" src="/Gallery/gallery_6_mob.png" />
+        </div>
+        <div className="basis-1/2 ">
+          <img className="w-full h-full " src="/Gallery/gallery_7_mob.png" />
+        </div>
         </div>
     </div>
   </section>

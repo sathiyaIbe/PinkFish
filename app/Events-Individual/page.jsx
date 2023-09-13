@@ -71,7 +71,7 @@ const EventsIndividual = () => {
         <h1 className='more_shows_header'>more shows</h1>
       <div className='flex gap-11 mb-11 image_container_home '>
             <div className='flex flex-col gap-4'>
-        <img className='max-w-[300px]' src="/event_individual_5.png"  alt='img'/>
+        <img className='max-w-[300px] md:max-w-[100%]' src="/event_individual_5.png"  alt='img'/>
         <div className=" text-white flex flex-col gap-4">
             <h1 className="event_text_date2">13 october 2023</h1>
             <h1 className="event_text2">Tyga live in kl</h1>
@@ -85,7 +85,7 @@ const EventsIndividual = () => {
           </div>
           </div>
           <div className='flex flex-col gap-4'>
-        <img className='max-w-[300px]' src="/event_individual_5.png"  alt='img'/>
+        <img className='max-w-[300px]  md:max-w-[100%]' src="/event_individual_5.png"  alt='img'/>
         <div className=" text-white flex flex-col gap-4">
             <h1 className="event_text_date2">13 october 2023</h1>
             <h1 className="event_text2">lil pump Live in kl</h1>
