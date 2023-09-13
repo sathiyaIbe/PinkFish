@@ -1,62 +1,70 @@
 .hero_container {
-    background-image: url('/HEROIMG.png');
-    /* background: url('/hero_blackGradient.png')  20% bottom no-repeat, url("/HEROIMG.png") 80%  top ; */
-
+    /* background-image: url('/HEROIMG.png'); */
+    background: url('/hero_blackGradient.png')  bottom no-repeat, url("/HEROIMG.png")  top ;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     min-height: 100vh;
     @apply flex flex-col justify-end;
 }
 
+@media screen and (max-width:768px) {
+.hero_container{
+    /* background-image: url('/HEROIMG_Mob.png');
+    background-position: center; */
+    background-color: black;
+    background-image: none;
+
+}
+}
+
+
+
 .hero_heading {
-    @apply text-white text-[90px] leading-[108px] font-[400]  uppercase ;
+    @apply  text-white text-[48px] w-fit block md:text-[80px] leading-[57.5px] md:leading-[108px] font-[400]  uppercase ;
     /* font-family:'Courier New', Courier, monospace */
 font-family: "Integral";
 }
-.header_container{
+/* .header_container{
     background-image: url('/hero_blackGradient.png');
-}
+} */
 .horizantal_line {
 
-    max-width: 99.98%
+    max-width: 99.9%
 }
 
 .horizantal_pink_container {
-    @apply bg-[#F33288] py-4;
+    @apply bg-[#F33288] py-0 md:py-4;
     transform: rotate(-1.5deg);
     z-index: -99;
     overflow: hidden;
 }
 
 .horizantal_text_1 {
-    font-size: 34px;
-    line-height: 30px;
-    font-weight: 400;
     color: black;
     -webkit-text-fill-color: #F33288;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(246, 244, 244);
-    text-transform: uppercase;
-    @apply font-[Integral];
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  
+    margin-right: 0px;
+    @apply mt-4 md:mt-0 font-[Integral] text-[12px] md:text-[34px] leading-[16px] md:leading-[30px] font-[400] uppercase;
 
+}
+
+.svg_text{
+    @apply w-[25px] md:w-[49px] h-[19px] md:h-[36px] mt-4 md:mt-0 ;
 }
 
 
 .horizantal_text_2 {
-    font-size: 34px;
-    line-height: 30px;
-    font-weight: 400;
     color: #fff;
-
-    text-transform: uppercase;
-    @apply font-[Integral];
+    @apply mt-4 md:mt-0 font-[Integral] text-[12px] md:text-[34px] leading-[16px] md:leading-[30px] font-[400] uppercase;
 }
 
 .horizantal_pink_container_body {
 
-    width: 100%;
+    width: fit-content;
     transform: translateX(0%);
     /* Animation start out of the screen */
 
@@ -68,9 +76,9 @@ font-family: "Integral";
 
 /* Create the animation */
 @keyframes move {
-    to {
-        transform: translateX(-100%);
-    }
+    from   { transform: translateX(0%); }
+    to { transform: translateX(50%); }
+  
 }
 
 .gradient_hero {
@@ -94,6 +102,17 @@ font-family: "Integral";
 
 .image_container_home{
    height: fit-content;
+   
+   @apply max-w-[114%] md:max-w-[90%]   overflow-x-scroll overflow-x-hidden ;
+}
+.image_container_home_event{
+    
+    @apply w-screen   overflow-x-hidden ;
+ }
+.image_container_home_desktop{
+    height: fit-content;
+    @apply   overflow-hidden max-w-[90%] ;
+
 }
 
 .text-block {
@@ -101,9 +120,11 @@ font-family: "Integral";
     bottom: 20px;
 
     color: white;
-    padding-left: 20px;
+    padding-left: 24px;
     padding-right: 20px;
 }
+
+
 
 .container {
     position: relative;
@@ -111,27 +132,28 @@ font-family: "Integral";
 
 
 .event_text_date {
-    @apply text-[12px] leading-[24px] font-[400] font-[Sofia] uppercase tracking-[8px];
+    @apply text-[10px] md:text-[12px] leading-[12px] md:leading-[24px] font-[400] font-[Sofia] uppercase tracking-[4px] md:tracking-[8px];
 }
 
 .event_text {
-    @apply text-[40px] leading-[24px] font-[500] font-[Integral];
+    @apply text-[24px] md:text-[40px] leading-[24px] font-[500] font-[Integral];
 }
 
 .event_tickets {
-    @apply bg-[#F33288] rounded-lg w-[50%] md:w-[40%] p-2 flex text-[16px] leading-[20px] font-[Integral];
+    @apply bg-[#F33288] rounded-lg w-fit md:w-[40%] p-2 flex text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-[Integral];
 }
 
 .event_text_date2 {
-    @apply text-[12px] leading-[24px] font-[400] font-[Sofia] uppercase tracking-[8px]
+    @apply text-[10px] md:text-[12px] leading-[12px] md:leading-[24px] font-[400] font-[Sofia] uppercase tracking-[4px] md:tracking-[8px];
 }
 
 .event_text2 {
-    @apply text-[32px] leading-[24px] font-[500] font-[Integral]
+    @apply text-[24px] md:text-[32px] leading-[24px] font-[500] font-[Integral];
+    text-wrap: nowrap;
 }
 
 .event_tickets2 {
-    @apply bg-[#F33288] rounded-lg w-[50%] md:w-[62%] p-2 flex text-[16px] leading-[20px] font-[Integral];
+    @apply bg-[#F33288] rounded-lg w-fit md:w-[62%] p-2 flex text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-[Integral];
 }
 
 .buy_ticket {
@@ -147,14 +169,16 @@ font-family: "Integral";
 .gallery_container{
     background-color: #F33288;
 }
-
+.gallery_container_mob{
+    background-color: #F33288;
+}
 
 .gallery_header{
-    @apply text-[32px] leading-[24px] font-[Integral] text-white uppercase font-[500]
+    @apply text-[24px] md:text-[32px] leading-[24px] font-[Integral] text-white uppercase font-[500]
 }
 
 .gallery_text{
-    @apply text-[14px] leading-[24px] font-[Sofia] text-white  font-[400] w-4/5
+    @apply text-[12px] md:text-[14px] leading-[24px] font-[Sofia] text-white  font-[400] w-4/5 md:w-full
 }
 
 .gallery_btn{
@@ -162,19 +186,45 @@ font-family: "Integral";
 
 
 }
+div::-webkit-scrollbar {
+    display: none;
+  }
+/* .img_cont{
+    display: inline-block;
+} */
+.gallery_main_container{
+ @apply overflow-x-scroll overflow-hidden;
+
+}
 
 .banner_header{
-    @apply text-[80px] leading-[95px] font-[Integral] text-white uppercase font-[500]
+    @apply text-[36px] md:text-[80px] leading-[50px] md:leading-[95px] font-[Integral] text-white uppercase font-[500]
    
 }
 
 .banner_text{
-    @apply text-[24px] leading-[50px] font-[Sofia] text-white  font-[700]
+    @apply text-[12px] md:text-[24px] leading-[50px] font-[Sofia] text-white  font-[700]
 }
 
 .banner_container{
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0);
 background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(244,0,134,1) 1%, rgba(246,6,129,1) 2%, rgba(246,137,175,1) 98%, rgba(239,128,175,1) 99%, rgba(0,0,0,1) 99%);
+} */
+background-image: url('/Gradient_pink_big.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+    .banner_container{
+       
+    background-image: url('/Gradient_pink.png');
+    
+    }
+
+
+    
+    
 }
 
 .banner_img_1{
@@ -201,9 +251,50 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(244
 }
 
 .banner_img_5{
-    left: 72%;
-    top: 83%;
+    left: 64%;
+    top: 86%;
+    
   
     background-color: #F33288;
-    @apply p-1 pl-3 pr-3  rounded-2xl font-[400] font-[Sofia] text-[16px] leading-[24px]
+   
+    @apply   p-1 pl-3 pr-3  rounded-2xl font-[400] font-[Sofia] text-[16px] leading-[24px]
+}
+
+@media screen and (min-width:1540px) {
+.banner_img_5{
+    @apply left-[65%]
+}
+}
+
+
+.marquee-container {
+  height: 50px;
+  overflow: hidden;
+  line-height: 30px;
+
+  .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee2 {
+    animation-delay: 15s;
+  }
+  b {
+    padding-left: 10px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%
+  }
 }

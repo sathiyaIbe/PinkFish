@@ -113,23 +113,11 @@
 
 
 .buy_ticket_footer{
-  background-color: #F33288;
-  @apply rounded-lg gap-2 text-white p-3 w-fit;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  font-family: Sofia;
+  @apply font-[Sofia] bg-[#F33288] text-[14px] md:text-[18px] leading-[20px] md:leading-[24px] font-[700] font-[Sofia] uppercase rounded-lg gap-2 text-white p-3 md:w-fit w-full ;
 }
 
 .browse_show{
-  background-color: transparent;
-  @apply rounded-lg gap-2 text-white p-3 w-fit;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  font-family: Sofia;
+  @apply bg-transparent text-[14px] md:text-[18px] leading-[20px] md:leading-[24px] font-[700] font-[Sofia] uppercase rounded-lg gap-2 text-white p-3 md:w-fit w-full;  
   border: 1px solid #fff;
 }
 
@@ -157,28 +145,35 @@
 }
 
 .navbar_container{
-  @apply flex justify-between w-[90%] self-center ;
+  @apply  flex flex-col ;
 }
 
+.desktop_navbar{
+
+@apply flex justify-between w-[90%] self-center  ;
+}
+
+.navbar_container_mob{
+  @apply flex justify-end   w-[90%] self-center  md:hidden ;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full  w-full p-5 rounded-lg bg-black min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm  text-[#F33288]  font-medium;
+}
+
+
 .menu_text{
-  color: #F33288;
-  text-transform: uppercase;
-  font-family: Integral;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 5px;
-  @apply mt-3;
+
+  @apply uppercase text-[#F33288] mt-3 font-[Integral] font-[700] text-[12px] md:text-[18px] leading-[14px] md:leading-[24px] tracking-[5px];
 }
 
 .buy_ticket{
-  background-color: #F33288;
-  @apply rounded-lg  gap-2 text-white p-3;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 500;
-  font-family: Integral;
+  @apply bg-[#F33288] rounded-lg uppercase  gap-2 text-white p-3 text-[12px] md:text-[18px] leading-[14px] md:leading-[24px] font-[500] font-[Integral];
+
 }
 
 @font-face {

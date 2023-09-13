@@ -7,9 +7,12 @@ import { Footer } from '../../components';
 
 const Faq = () => {
   return (
-    <div className="faq_main_container  relative h-screen flex flex-col text-white pt-11      ">
-    <div className="  flex   w-[80%] self-center">
-      <div className="basis-1/2 ">
+    <div className="  min-h-screen min-w-screen  text-white pt-11    overflow-hidden  ">
+   <div className='faq_main_container flex flex-col'>
+
+  
+    <div className="  flex flex-col md:flex-row  w-[80%] self-center">
+      <div className="md:basis-1/2 ">
         <h1 className="contact_header">Frequently asked questions</h1>
         <p className="contact_text mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -53,7 +56,7 @@ const Faq = () => {
      <img className='mt-1 ml-2' src='/uparrow.png'/>
 
       </button>
-    
+      </div>
   </div>
   )
 }

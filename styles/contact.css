@@ -10,20 +10,20 @@
 }
 
 .contact_submit{
-    @apply bg-[#F33288] rounded w-fit  p-2 flex text-[18px] leading-[24px] font-[Integral] text-white font-[500] ;
+    @apply bg-[#F33288] rounded w-full text-center md:w-fit    p-2 flex justify-center text-[18px] leading-[24px] font-[Integral] text-white font-[500] ;
 
 }
 
 .contact_header{
-    @apply text-[40px] leading-[48px] font-[500] font-[Integral] text-white
+    @apply text-[24px] md:text-[40px] leading-[24px] md:leading-[48px] font-[500] font-[Integral] text-white
 
 }
 .contact_text{
-    @apply text-[20px] leading-[24px] font-[400] font-[Sofia] text-white w-[85%]
+    @apply text-[10px] md:text-[20px] leading-[14px] md:leading-[24px] font-[400] font-[Sofia] text-white w-[85%]
 }
 
 .contact_sub_header{
-    @apply text-[24px] leading-[28px] font-[500] font-[Integral] text-white
+    @apply text-[16px] md:text-[24px] leading-[18px] md:leading-[28px] font-[500] font-[Integral] text-white
 
 }
 
@@ -33,7 +33,7 @@
 }
 
 .question_text{
-    @apply text-[18px] leading-[27px] font-[700] font-[Sofia] text-white uppercase
+    @apply text-[16px] md:text-[18px] leading-[24px] md:leading-[27px] font-[700] font-[Sofia] text-white uppercase
 
 }
 
@@ -42,18 +42,21 @@
 
 }
 .top_btn{
-    @apply text-[18px] leading-[24px] font-[500] font-[Integral] text-white uppercase
+    @apply text-[12px] md:text-[18px]  leading-[13.5px] md:leading-[24px] font-[500] font-[Integral] text-white uppercase
 
 }
 .faq_main_container{
-    background: url('/blackGradient.png')  bottom no-repeat, url("/faq_bg.png")  top no-repeat ;
- 
+    background: url('/hero_blackGradient.png')  bottom no-repeat, url("/faq_bg.png")  top no-repeat  ;
+    min-width: 100vw;
+    background-size: cover;
+   
 }
 
 .event_container{
-    background: url('/blackGradient.png')  bottom no-repeat, url('/blackGradient.png')  center no-repeat, url("/event_bg.png")  top no-repeat ;
-   
-
+    background: url('/blackGradient.png')  bottom no-repeat, url("/event_bg.png")  top no-repeat  ;
+    background-size: cover;
+   min-width: 100vw;
+  
 }
 
 
@@ -64,27 +67,27 @@
 
 .date_event_main_text{
     /* @apply font-[Sofia] text-[20px] font-[400] leading-[24px] uppercase text-white */
-    @apply text-[20px] leading-[24px] font-[400] font-[Sofia] uppercase tracking-[10px];
+    @apply text-[10px] md:text-[20px] leading-[24px] font-[400] font-[Sofia] uppercase tracking-[10px];
 
 }
 
 .event_section_header{
-    @apply font-[Integral] text-[40px] font-[400] leading-[24px] uppercase text-white tracking-[8px]
+    @apply font-[Integral] text-[24px] md:text-[40px] font-[400] leading-[24px] uppercase text-white tracking-[8px]
 
 }
 
 .event_section_text{
-    @apply font-[Sofia] text-[20px] font-[400] leading-[24px]  text-white w-[80%]
+    @apply font-[Sofia] text-[10px] md:text-[20px] font-[400] leading-[14px] md:leading-[24px]  text-white w-[80%]
 
 }
 
 .buy_ticket_event_main{
-    @apply font-[Sofia] text-[16px] font-[700] leading-[20px] text-center  text-white bg-[#F33288] text-center p-1 rounded ;
+    @apply font-[Sofia] text-[12px] md:text-[16px] font-[700] leading-[20px] text-center  text-white bg-[#F33288] text-center p-1 rounded ;
     text-align: center !important;
 }
 
 .soldout_ticket_event_main{
-    @apply font-[Sofia] text-[16px] font-[700] leading-[20px]  text-black bg-[#D1CFCF] text-center p-1 rounded;
+    @apply font-[Sofia]  text-[12px] md:text-[16px] font-[700] leading-[20px]  text-black bg-[#D1CFCF] text-center p-1 rounded;
 
 }
 
@@ -95,23 +98,23 @@
 }
 
 .event_bottom_header{
-    @apply font-[Sofia] text-[24px] font-[400] leading-[25px] uppercase text-white tracking-[1px]
+    @apply font-[Sofia] text-[14px] md:text-[24px] font-[400] leading-[18px] md:leading-[25px] uppercase text-white tracking-[1px]
 
 }
 
 .event_bottom_main_hearder{
-    @apply font-[Integral] text-[80px] font-[400] leading-[94px] uppercase text-white  w-[75%]
+    @apply font-[Integral] text-[48px] md:text-[80px] font-[400] leading-[52px] md:leading-[94px] uppercase text-white w-[90%] md:w-[75%]
 
 }
 
 .black_btn{
-    @apply font-[Integral] rounded text-[14px] font-[400] leading-[24px] uppercase text-white bg-black p-2 text-center  w-fit
+    @apply font-[Integral] rounded text-[12px] md:text-[14px] font-[400] leading-[13px] md:leading-[24px] uppercase text-white bg-black p-2 text-center  w-fit
 
 }
 
 .details_container{
     border: solid 1px #F33288;
-   @apply text-white w-[80%];
+   @apply text-white w-[100%] md:w-[80%];
 }
 
 .details_header{
@@ -130,6 +133,10 @@
 }
 
 .more_shows_header{
-    @apply font-[Integral] text-[64px] font-[500] leading-[82px] uppercase text-white  text-center mt-11 mb-6
+    @apply font-[Integral] text-[24px] md:text-[64px] font-[500] leading-[24px] md:leading-[82px] uppercase text-white  text-center mt-11 mb-6
 
+}
+
+.first_container{
+ background: linear-gradient(180deg, transparent 20%, rgb(105, 96, 96) 40%, rgba(0,0,0,1) 40%, ); 
 }
