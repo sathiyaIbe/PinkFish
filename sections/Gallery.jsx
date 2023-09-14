@@ -22,10 +22,10 @@ const Gallery = () =>{
   }
 
 
-// var dragged = false
-// var oldX = 0;
-// window.addEventListener('mousedown', function (e) { oldX = e.pageX; dragged = false })
-// document.addEventListener('mousemove', function () { dragged = true })
+var dragged = false
+var oldX = 0;
+window.addEventListener('mousedown', function (e) { oldX = e.pageX; dragged = false })
+document.addEventListener('mousemove', function () { dragged = true })
 // window.addEventListener('mouseup', function(e) {
 // var direction
 // var divOverlay =   document.getElementById('container')
