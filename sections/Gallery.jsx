@@ -22,31 +22,31 @@ const Gallery = () =>{
   }
 
 
-var dragged = false
-var oldX = 0;
-window.addEventListener('mousedown', function (e) { oldX = e.pageX; dragged = false })
-document.addEventListener('mousemove', function () { dragged = true })
-window.addEventListener('mouseup', function(e) {
-var direction
-var divOverlay =   document.getElementById('container')
+// var dragged = false
+// var oldX = 0;
+// window.addEventListener('mousedown', function (e) { oldX = e.pageX; dragged = false })
+// document.addEventListener('mousemove', function () { dragged = true })
+// window.addEventListener('mouseup', function(e) {
+// var direction
+// var divOverlay =   document.getElementById('container')
     
-        if (dragged == true && e.pageX < oldX) {
-      ;
+//         if (dragged == true && e.pageX < oldX) {
+//       ;
 
-            direction = "left"
-            sideScroll(divOverlay,'right',25,300,900);
-        } else if (dragged == true && e.pageX > oldX) {
-            direction = "right"
+//             direction = "left"
+//             sideScroll(divOverlay,'right',25,300,900);
+//         } else if (dragged == true && e.pageX > oldX) {
+//             direction = "right"
 
-            sideScroll(divOverlay,'left',25,100,900);
+//             sideScroll(divOverlay,'left',25,100,900);
           
-        }
+//         }
         
         
-        // console.log(direction)
+//         // console.log(direction)
         
         
-})
+// })
   
 return(
   <section className="mt-24">
