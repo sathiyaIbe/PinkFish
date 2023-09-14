@@ -35,9 +35,9 @@ function mouseUp(e) {
 var divOverlay =   document.getElementById('container')
 console.log(e?.pageX)
         if (dragged == true && e?.pageX < oldX) {
-            sideScroll(divOverlay,'right',25,300,oldX-e?.pageX);
+            sideScroll(divOverlay,'right',25,300,900);
         } else if (dragged == true && e?.pageX > oldX) {
-            sideScroll(divOverlay,'left',25,100, e?.pageX-oldX);          
+            sideScroll(divOverlay,'left',25,100, 900);          
         }    
 }
   
