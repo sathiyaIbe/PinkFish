@@ -24,34 +24,38 @@ const Gallery = () =>{
 
 var dragged = false
 var oldX = 0;
-window.addEventListener('mousedown', function (e) { oldX = e.pageX; dragged = false })
-document.addEventListener('mousemove', function () { dragged = true })
-// window.addEventListener('mouseup', function(e) {
-// var direction
 // var divOverlay =   document.getElementById('container')
+function mouseDown (e) {
+   oldX = e.pageX; dragged = false 
+  }
+ function mouseMove() { dragged = true }
+
+function mouseUp(e) {
+var direction
+var divOverlay =   document.getElementById('container')
     
-//         if (dragged == true && e.pageX < oldX) {
-//       ;
+        if (dragged == true && e.pageX < oldX) {
+      ;
 
-//             direction = "left"
-//             sideScroll(divOverlay,'right',25,300,900);
-//         } else if (dragged == true && e.pageX > oldX) {
-//             direction = "right"
+            direction = "left"
+            sideScroll(divOverlay,'right',25,300,900);
+        } else if (dragged == true && e.pageX > oldX) {
+            direction = "right"
 
-//             sideScroll(divOverlay,'left',25,100,900);
+            sideScroll(divOverlay,'left',25,100,900);
           
-//         }
+        }
         
         
-//         // console.log(direction)
+        // console.log(direction)
         
         
-// })
+}
   
 return(
   <section className="mt-24">
 
-    <div id="container" draggable="false" className="flex gallery_main_container gap-4 hidden md:block">
+    <div id="container" onMouseMove={mouseMove()}  onMouseDown={(e)=>mouseDown(e)} onMouseUp={(e)=>mouseUp()} draggable="false" className="flex gallery_main_container gap-4 hidden md:block">
       <div className="flex gap-8 ">
       <div className="flex flex-col gap-8 ">
         <img   draggable="false" className="min-w-[400px] h-[260px]" src="/Gallery/gallery_1.png" />
