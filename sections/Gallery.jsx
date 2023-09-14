@@ -21,7 +21,6 @@ const Gallery = () =>{
 
 var dragged = false
 var oldX = 0;
-// var divOverlay =   document.getElementById('container')
 function mouseDown (e) {
   console.log(e.pageX)
     oldX = e.pageX;
@@ -33,7 +32,6 @@ function mouseDown (e) {
 
 function mouseUp(e) {
 var divOverlay =   document.getElementById('container')
-console.log(e?.pageX)
         if (dragged == true && e?.pageX < oldX) {
             sideScroll(divOverlay,'right',25,300,900);
         } else if (dragged == true && e?.pageX > oldX) {
