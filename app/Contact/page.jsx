@@ -2,7 +2,7 @@
 import '../../styles/contact.css';
 
 const Contact = () => (
-  <div className="contact_main_container  h-screen flex justify-center text-white pt-11  ">
+  <div className="contact_main_container  min-h-screen flex justify-center text-white pt-11 mb-11  ">
     <div className="  flex flex-col md:flex-row w-[90%]  md:w-[80%] ">
       <div className="md:basis-1/2 ">
         <h1 className="contact_header">reach out to us</h1>
@@ -37,7 +37,7 @@ const Contact = () => (
           </div>
           <div className="flex flex-col gap-2">
             <label className="contact_label">Subject</label>
-            <input className="contact_input" placeholder="Select project type" type="text" />
+            <input className="contact_input"  type="text" />
           </div>
           <div className="flex flex-col gap-2">
             <label className="contact_label">Message</label>

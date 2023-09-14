@@ -7,7 +7,7 @@ import { Footer } from '../../components';
 
 const Faq = () => {
   return (
-    <div className="  min-h-screen min-w-screen  text-white pt-11    overflow-hidden  ">
+    <div className="  min-h-screen min-w-screen  text-white pt-11 mb-11    overflow-hidden  ">
    <div className='faq_main_container flex flex-col'>
 
   
@@ -51,7 +51,7 @@ const Faq = () => {
       </div>
     
     </div>
-    <button  onClick={()=>{scrollTop()}} className='top_btn flex self-center mt-11'>
+    <button  onClick={()=>{scrollTop()}} className='top_btn flex self-center items-end mt-11'>
       back to top 
      <img className='mt-1 ml-2' src='/uparrow.png'/>
 

@@ -168,6 +168,7 @@ font-family: "Integral";
 
 .gallery_container{
     background-color: #F33288;
+    pointer-events: none;
 }
 .gallery_container_mob{
     background-color: #F33288;

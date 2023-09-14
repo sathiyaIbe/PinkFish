@@ -6,6 +6,7 @@ const RootLayout = ({ children }) => (
     <head>
       <link rel="preconnect" href="https://stijndv.com" />
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
+      <link href="https://db.onlinewebfonts.com/c/7615af7a9f681395bf515be718f1bf9c?family=SofiaPro" rel="stylesheet"/>
       {/* <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
       <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script> */}
