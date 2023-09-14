@@ -42,7 +42,7 @@ var divOverlay =   document.getElementById('container')
 return(
   <section className="mt-24">
 
-    <div id="container" onMouseMove={mouseMove()}  onMouseDown={(e)=>mouseDown(e)} onMouseUp={(e)=>mouseUp()}  className="flex gallery_main_container gap-4 hidden md:block">
+    <div id="container" onMouseMove={()=>mouseMove()}  onMouseDown={(e)=>mouseDown(e)} onMouseUp={(e)=>mouseUp()}  className="flex gallery_main_container gap-4 hidden md:block">
       <div className="flex gap-8 ">
       <div className="flex flex-col gap-8 ">
         <img   draggable="false" className="min-w-[400px] h-[260px]" src="/Gallery/gallery_1.png" />
