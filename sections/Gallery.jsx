@@ -26,30 +26,20 @@ var dragged = false
 var oldX = 0;
 // var divOverlay =   document.getElementById('container')
 function mouseDown (e) {
-   oldX = e.pageX; dragged = false 
+    oldX = e.pageX;
+    dragged = false 
   }
- function mouseMove() { dragged = true }
+ function mouseMove() {
+   dragged = true 
+  }
 
 function mouseUp(e) {
-var direction
 var divOverlay =   document.getElementById('container')
-    
         if (dragged == true && e.pageX < oldX) {
-      ;
-
-            direction = "left"
             sideScroll(divOverlay,'right',25,300,900);
         } else if (dragged == true && e.pageX > oldX) {
-            direction = "right"
-
-            sideScroll(divOverlay,'left',25,100,900);
-          
-        }
-        
-        
-        // console.log(direction)
-        
-        
+            sideScroll(divOverlay,'left',25,100,900);          
+        }    
 }
   
 return(
