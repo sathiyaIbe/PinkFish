@@ -180,31 +180,7 @@
   font-family: 'Integral';
   src: url("/fonts/Fontspring-DEMO-integralcf-regular.otf");
 }
-
-
-
-
 @font-face {
   font-family: 'Sofia';
   src: url("/fonts/SofiaPro.ttf");
 }
-
-/* @font-face {
-  font-family: "Integral";
-  src: url("https://db.onlinewebfonts.com/t/b52804ac57ef6e90d2826a6b0f111133.eot");
-  src: url("https://db.onlinewebfonts.com/t/b52804ac57ef6e90d2826a6b0f111133.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/b52804ac57ef6e90d2826a6b0f111133.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/b52804ac57ef6e90d2826a6b0f111133.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/b52804ac57ef6e90d2826a6b0f111133.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/b52804ac57ef6e90d2826a6b0f111133.svg#Integral CF Bold")format("svg");
-} */
-
-/* @font-face {
-  font-family: "Sofia";
-  src: url("https://db.onlinewebfonts.com/t/7615af7a9f681395bf515be718f1bf9c.eot");
-  src: url("https://db.onlinewebfonts.com/t/7615af7a9f681395bf515be718f1bf9c.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/7615af7a9f681395bf515be718f1bf9c.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/7615af7a9f681395bf515be718f1bf9c.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/7615af7a9f681395bf515be718f1bf9c.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/7615af7a9f681395bf515be718f1bf9c.svg#SofiaPro")format("svg");
-} */
