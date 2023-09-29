@@ -21,8 +21,8 @@ const Events = () => (
         {/* <div className="container">
         <img className="" src="/event_2.png"/>
       </div> */}
-        <div className="container  ">
-          <img className="max-h-[668px] max-w-[803px] hidden md:block" src="/event_2.png" />
+        <div className="container ">
+          <img className="max-h-[668px] max-w-[803px] hidden md:block " src="/event_2.png" />
           <img className=" max-h-[384px] max-w-[308px] md:hidden self-center" src="/event_2_Mob.png" />
           <div className="text-block text-white flex flex-col gap-2 md:gap-4">
             <h1 className="event_text_date2">9 august 2023</h1>

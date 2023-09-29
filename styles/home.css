@@ -130,7 +130,7 @@ font-family: "Integral";
 
 .container {
     position: relative;
-    @apply left-[23%] md:left-[28%] overflow-hidden
+    @apply left-[14%] md:left-[28%] overflow-hidden
 }
 
 
