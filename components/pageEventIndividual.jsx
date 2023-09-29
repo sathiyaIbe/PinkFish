@@ -1,3 +1,4 @@
+/* eslint-disable */
 // import '../../styles/contact.css';
 // import '../../styles/home.css';
 
