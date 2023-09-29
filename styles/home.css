@@ -105,7 +105,7 @@ font-family: "Integral";
 .image_container_home{
    height: fit-content;
    
-   @apply  md:max-w-[90%]   overflow-x-hidden ;
+   @apply     min-w-[100vw] ;
 }
 .image_container_home_event{
     
@@ -130,7 +130,7 @@ font-family: "Integral";
 
 .container {
     position: relative;
-    @apply left-[14%] md:left-[28%]
+    /* @apply left-[14%] right-[20%]; */
 }
 
 
