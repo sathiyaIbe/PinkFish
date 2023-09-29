@@ -1,8 +1,8 @@
 'use client'
 import '../../styles/contact.css';
-import AccordItem from '../../components/AccordItem'
-  import { scrollTop } from '../../components/jsfile';
-import { Footer } from '../../components';
+import AccordItem from './AccordItem'
+  import { scrollTop } from './jsfile';
+import { Footer } from '.';
 
 
 const Faq = () => {

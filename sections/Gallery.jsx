@@ -22,7 +22,6 @@ const Gallery = () =>{
 var dragged = false
 var oldX = 0;
 function mouseDown (e) {
-  console.log(e.pageX)
     oldX = e.pageX;
     dragged = false 
   }

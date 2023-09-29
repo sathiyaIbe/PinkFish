@@ -158,17 +158,20 @@
 }
 
 .dropdown {
-  @apply absolute right-0 top-full  w-full p-5 rounded-lg bg-black min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  @apply absolute right-0 top-full  w-full  rounded-lg bg-black min-w-[210px] flex flex-col   items-center;
 }
 
 .dropdown_link {
   @apply text-sm  text-[#F33288]  font-medium;
 }
 
+.menu_text_mob{
 
+  @apply w-[100%] text-center uppercase text-[#F33288] hover:bg-[#F33288] hover:text-white bg-black pt-5 pb-5 font-[Integral] font-[700] text-[18px] leading-[28px] md:leading-[24px] tracking-[5px];
+}
 .menu_text{
 
-  @apply uppercase text-[#F33288] mt-3 font-[Integral] font-[700] text-[12px] md:text-[18px] leading-[14px] md:leading-[24px] tracking-[5px];
+  @apply w-[100%] text-center uppercase text-[#F33288]  bg-black pt-5 pb-5 font-[Integral] font-[700] text-[12px] md:text-[18px] leading-[14px] md:leading-[24px] tracking-[5px];
 }
 
 .buy_ticket{
@@ -178,7 +181,7 @@
 
 @font-face {
   font-family: 'Integral';
-  src: url("/fonts/Fontspring-DEMO-integralcf-regular.otf");
+  src: url("/fonts/Integral CF Regular.ttf");
 }
 @font-face {
   font-family: 'Sofia';

@@ -10,10 +10,10 @@ const Event = () => {
         <h1 className='event_main_header pt-11 opacity'>Events</h1>
         <div className='flex justify-center mt-11'>
             <div className='flex flex-col gap-6   w-[80%] '>
-                <div className='flex flex-col md:flex-row gap-4 first_container  '>
+                {/* <div className='flex flex-col md:flex-row gap-4 first_container  '>
                 <div className='basis-2/3 flex flex-col gap-6 order-2 md:order-1'>
                     <hr  className='hr_line_footer'/>
-                    <p className='date_event_main_text'>13 october 2023</p>
+                    <p className='date_event_main_text'>9 august 2023</p>
                     <h1 className='event_section_header'>lil pump Live in kl</h1>
                     <p className='event_section_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -22,7 +22,7 @@ const Event = () => {
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                     <Link href='/Events-Individual'>
-                    <button className="buy_ticket_event_main flex w-fit " type="button">Buy Tickets
+                    <button className="buy_ticket_event_main flex w-fit " type="button">Reach Out 
                     <svg className="mt-1 md:mt-2 ml-1" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 9.46351L4.67453 5.78896C5.10849 5.35501 5.10849 4.64489 4.67453 4.21094L1 0.536377" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -33,11 +33,11 @@ const Event = () => {
                 <div className='basis-1/3 order-1 md:order-2'>
                     <img src="/event_main_1.png"/>
                 </div>
-                </div>
+                </div> */}
                 <div className='flex gap-4 flex-col md:flex-row  '>
                 <div className='basis-2/3 flex flex-col order-2 md:order-1 gap-6'>
                     <hr  className='hr_line_footer'/>
-                    <p className='date_event_main_text'>13 october 2023</p>
+                    <p className='date_event_main_text'>9 august 2023</p>
                     <h1 className='event_section_header'>TYGA LIVE IN KL</h1>
                     <p className='event_section_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -45,8 +45,8 @@ const Event = () => {
                      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <button className="soldout_ticket_event_main flex w-fit " type="button">Sold Out
-                    <svg className="mt-1 md:mt-2 ml-1" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button className="soldout_ticket_event_main  flex w-fit pb-2 " type="button">Sold Out
+                    <svg className="mt-1 md:mt-1 ml-2 mr-2 " width="6" height="12" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 9.46351L4.67453 5.78896C5.10849 5.35501 5.10849 4.64489 4.67453 4.21094L1 0.536377" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
