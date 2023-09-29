@@ -29,7 +29,7 @@ return (
           <h1 className="menu_text ">Contact</h1>
         </Link>
       </div>
-      <Link className='mt-3'  href="/Events-Individual">
+      <Link className='mt-3'  href="/Contact">
         <button className="buy_ticket flex " type="button">Reach out
           <svg className="mt-2 ml-1 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />
@@ -56,7 +56,7 @@ return (
      <Link href="/Events" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>Events</Link>
     <Link href="/" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>about us </Link>
     <Link href="/Contact" className="menu_text_mob mb-4" onClick={()=>setToggleDropdown(false)}>Contact</Link>
-    <Link href="/Events-Individual" className='w-[40%]'  onClick={()=>setToggleDropdown(false)}>
+    <Link href="/Contact" className='w-[40%]'  onClick={()=>setToggleDropdown(false)}>
         <button className="buy_ticket   p-5 mb-6 flex " type="button">Reach out
           <svg className="mt-2 md:mt-2  ml-1 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />

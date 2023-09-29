@@ -10,7 +10,7 @@ const Footer = () => (
           <h1 className="footer_heading">join the party</h1>
         <div className='flex gap-4 '>
             <div className=' buy_ticket_footer flex justify-center'>
-            <Link href="/Events-Individual">
+            <Link href="/Contact">
               <button className=" flex    " type="button">Reach Out 
                 <svg className="  md:mt-2 ml-2 mt-1  " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />

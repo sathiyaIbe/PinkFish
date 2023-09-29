@@ -2,7 +2,7 @@ import Link from 'next/link';
 import '../styles/home.css'
 const Hero = () => (
   <section className="hero_container flex mb-2 md:mb-11 ">
-      <img src='/HEROIMG_Mob.png' className='md:hidden mt-0 mb-12' />
+      <img src='/HEROIMG_Mob.png' className='md:hidden mt-0 mb-12 object-fill ' />
     <div className='  header_container flex justify-center'>
     
       <div className='flex flex-col md:flex-row items-center md:justify-between md: p-4 md:w-[90%]'>
@@ -14,7 +14,7 @@ const Hero = () => (
         
         </h1>
         </div>
-        <Link className="md:hidden mb-4" href="/Events-Individual">
+        <Link className="md:hidden mb-4" href="/Contact">
         <button className="buy_ticket flex " type="button">Reach Out 
           <svg className=" mt-2 ml-1 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />

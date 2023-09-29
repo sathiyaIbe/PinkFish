@@ -8,6 +8,7 @@
     min-height: 100vh;
     @apply flex flex-col justify-end;
     margin-top: 0px;
+    max-width: 100vw;
 }
 
 @media screen and (max-width:768px) {
@@ -16,8 +17,7 @@
     background-position: center; */
     background-color: #000;
     background-image: none;
-    margin-top: 0px;
-
+    min-height: 80vh;
 }
 }
 
@@ -130,7 +130,7 @@ font-family: "Integral";
 
 .container {
     position: relative;
-    @apply left-[14%] md:left-[28%] overflow-hidden
+    @apply left-[14%] md:left-[28%]
 }
 
 
