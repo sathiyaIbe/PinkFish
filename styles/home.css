@@ -216,7 +216,7 @@ div::-webkit-scrollbar {
 }
 
 .banner_text{
-    @apply text-[12px] md:text-[24px] leading-[50px] font-[Sofia] text-white  font-[700]
+    @apply text-[12px] md:text-[24px] leading-[24px] font-[Sofia] text-white  font-[700]
 }
 
 .banner_container{

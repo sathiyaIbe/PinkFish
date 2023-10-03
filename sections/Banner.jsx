@@ -6,7 +6,7 @@ const Banner = () => (
       <img className="absolute banner_img_2 hidden md:block" src="/Banner/over_banner_2.png" />
       <img className="absolute banner_img_3 hidden md:block" src="/Banner/over_banner_3.png" />
       <img className="absolute banner_img_4 hidden md:block" src="/Banner/over_banner_4.png" />
-      <h1 className="banner_header self-center">stay updated</h1>
+      <h1 className="banner_header self-center mb-4 mt-4">stay updated</h1>
       <p className="banner_text text-center self-center">Follow us on our social media pages</p>
       <div className="flex gap-4 pt-4 self-center">
       <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src="/Banner/instagram 1.png" /></a>
