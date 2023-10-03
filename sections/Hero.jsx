@@ -9,7 +9,7 @@ const Hero = () => (
       {/* <h1 className="absolute banner_img_5  text-center py-6 hidden md:block text-white ">
         Zepp KL
         </h1> */}
-        <div className='md:basis-3/4 flex justify-center '>
+        <div className='md:basis-3/4 flex justify-center mb-11'>
         <h1 className='hero_heading pt-3 mb-5 md:mb-24 max-w-[72%] text-center   '>pinkfish live
         
         </h1>
@@ -22,7 +22,7 @@ const Hero = () => (
         </button>
       </Link>
         
-        <div className='flex justify-center md:basis-1/4'>
+        <div className='flex justify-center mb-11 md:basis-1/4'>
         <a href='#Events' >
           <svg className='cursor-pointer pb-5 w-[84px] md:w-[131.14px] h-[84px] md:h-[131.14px] mt-6 md:mt-[-45px]'  viewBox="0 0 157 157" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M78.42 0C121.679 0 156.84 35.1613 156.84 78.42C156.84 121.679 121.679 156.84 78.42 156.84C35.1613 156.84 0 121.679 0 78.42C0 35.1613 35.1613 0 78.42 0ZM78.42 145.898C115.624 145.898 145.898 115.624 145.898 78.42C145.898 41.2161 115.624 10.9423 78.42 10.9423C41.2161 10.9423 10.9423 41.2161 10.9423 78.42C10.9423 115.624 41.2161 145.898 78.42 145.898Z" fill="white" />

@@ -30,6 +30,7 @@
 .contact_main_container{
     /* background-image: url("/contact_page_bg.png"); */
     background: url('/blackGradient.png')  bottom no-repeat, url("/contact_page_bg.png")  top no-repeat ;
+    background-size: cover;
 }
 
 .question_text{
@@ -174,5 +175,10 @@
 
 .about_us_main_header{
     @apply text-[14px] md:text-[64px] font-[200] leading-[16px] md:leading-[68px] font-[700]  font-[Sofia] text-center ;
+
+}
+
+.gallery_event{
+    @apply text-[18px] md:text-[24px] font-[200] leading-[16px] md:leading-[28px] font-[700]  font-[Integral] text-center ;
 
 }

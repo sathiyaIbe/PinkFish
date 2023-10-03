@@ -45,12 +45,14 @@ const Event = () => {
                      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
+                    <Link href='EventsIndividual'>
                     <button className="soldout_ticket_event_main  flex w-fit pb-2 " type="button">Sold Out
                     <svg className="mt-1 md:mt-1 ml-2 mr-2 " width="6" height="12" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 9.46351L4.67453 5.78896C5.10849 5.35501 5.10849 4.64489 4.67453 4.21094L1 0.536377" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
       </button>
+      </Link>
                 </div>
                 <div className='basis-1/3 order-1 md:order-2'>
                     <img src="/event_main_2.png"/>
@@ -70,11 +72,13 @@ const Event = () => {
         <h1 className='event_bottom_header mt-11'>pinkfish live</h1>
         <h1 className='event_bottom_main_hearder'>we bring the music,
 you bring the hype</h1>
+<Link href='Contact'>
 <button className='black_btn flex mb-11' type="button">have a question?  talk to us 
 <svg className="mt-0 md:mt-2 ml-2 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />
 </svg>
 </button>
+</Link>
       </div>
 
 

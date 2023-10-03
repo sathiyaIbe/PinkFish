@@ -19,12 +19,13 @@ return (
         <img src="/Logo.png" className="logo_img " />
       </Link>
       <div className="flex gap-6 ">
+      <Link href="/">
+          <h1 className="menu_text ">Home</h1>
+        </Link>
         <Link href="/Events">
           <h1 className="menu_text ">Events</h1>
         </Link>
-        <Link href="/">
-          <h1 className="menu_text ">about us</h1>
-        </Link>
+       
         <Link href="Contact">
           <h1 className="menu_text ">Contact</h1>
         </Link>
@@ -53,8 +54,9 @@ return (
 </button>
 {toggleDropdown &&
 <div className="dropdown">
+<Link href="/" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>Home </Link>
      <Link href="/Events" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>Events</Link>
-    <Link href="/" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>about us </Link>
+   
     <Link href="/Contact" className="menu_text_mob mb-4" onClick={()=>setToggleDropdown(false)}>Contact</Link>
     <Link href="/Contact" className='w-[40%]'  onClick={()=>setToggleDropdown(false)}>
         <button className="buy_ticket   p-5 mb-6 flex " type="button">Reach out

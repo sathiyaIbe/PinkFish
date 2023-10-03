@@ -8,9 +8,9 @@ const Banner = () => (
       <img className="absolute banner_img_4 hidden md:block" src="/Banner/over_banner_4.png" />
       <h1 className="banner_header self-center">stay updated</h1>
       <p className="banner_text text-center self-center">Follow us on our social media pages</p>
-      <div className="flex gap-2 self-center">
-        <img src="/Banner/instagram 1.png" />
-        <img src="/Banner/fb.png" />
+      <div className="flex gap-4 pt-4 self-center">
+      <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src="/Banner/instagram 1.png" /></a>
+        <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img src="/Banner/fb.png" /></a>
       </div>
     </div>
   </section>

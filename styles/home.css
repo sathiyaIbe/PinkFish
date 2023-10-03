@@ -143,6 +143,14 @@ font-family: "Integral";
     @apply text-[24px] md:text-[40px] leading-[24px] font-[500] font-[Integral];
 }
 
+.sub_heading_events{
+    @apply text-[16px] leading-[24px] font-[500] font-[Integral];
+
+}
+.sub_text{
+    @apply text-[16px] leading-[24px] font-[500] font-[Sofia];
+
+}
 .event_tickets {
     @apply bg-[#F33288] rounded-lg w-fit md:w-[40%] p-2 flex text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-[Integral];
 }
