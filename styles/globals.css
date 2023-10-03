@@ -131,7 +131,7 @@
 }
 
 .icon_text{
-  @apply text-white text-[14px] leading-[22px]    font-[Sofia];
+  @apply text-white text-[14px] leading-[22px] text-start font-[Sofia];
 
 }
 
@@ -139,8 +139,7 @@
 /* NAVBAR */
 
 .navbar_main_container{
-  @apply bg-black   sticky top-0 flex flex-col justify-center;
-  height: 16vh;
+  @apply bg-black md:min-h-[16vh] min-h-[10vh]   sticky top-0 flex flex-col justify-center;
   z-index: 99;
 }
 

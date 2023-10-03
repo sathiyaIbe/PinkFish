@@ -72,8 +72,8 @@ const Event = () => {
         <h1 className='event_bottom_header mt-11'>pinkfish live</h1>
         <h1 className='event_bottom_main_hearder'>we bring the music,
 you bring the hype</h1>
-<Link href='Contact'>
-<button className='black_btn flex mb-11' type="button">have a question?  talk to us 
+<Link href='Contact' className=' black_btn mb-11'>
+<button className=' flex p-3 md:p-2 ' type="button">have a question?  talk to us 
 <svg className="mt-0 md:mt-2 ml-2 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />
 </svg>

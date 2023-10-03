@@ -6,12 +6,8 @@ const Contact = () => (
     <div className="  flex flex-col md:flex-row w-[90%]  md:w-[80%] ">
       <div className="md:basis-1/2 ">
         <h1 className="contact_header">reach out to us</h1>
-        <p className="contact_text mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.
+        <p className="contact_text mt-6">We're all ears for your feedback, inquiries, and game-changing suggestions, 
+        and we're fully committed to making your Pinkfish experience nothing short of legendary.
         </p>
         <div className="flex flex-col gap-1 hidden md:block">
 

@@ -4,6 +4,7 @@ import '../../styles/contact.css';
 import '../../styles/home.css';
 import gsap from 'gsap';
 const EventsIndividual = () => {
+
     function sideScroll(direction,speed,distance,step){
         var element =   document.getElementById('container')
        
@@ -25,6 +26,18 @@ const EventsIndividual = () => {
         tl.to(e, {scale: 1, duration: .5, ease: "power1.inOut"});
       }
     
+      function moveImageLeft(){   
+  
+            gsap.to('.image_01',{
+                x:"0%", duration:3
+            })
+      }
+
+      function moveImageRight(){   
+        gsap.to('.image_01',{
+            x:"-100%", duration:3
+        })
+  }
     
     
     function mouseDowns (e) {
@@ -41,7 +54,7 @@ const EventsIndividual = () => {
     <div className='md:basis-2/3 order-2 md:order-1 flex flex-col gap-6'>
         
         <p className='date_event_main_text'>9 august 2023</p>
-        <h1 className='event_section_header'>TYGA live in kl</h1>
+        <h1 className='event_section_header cursour-pointer'>TYGA live in kl</h1>
         <p className='event_section_text'>Compton-born Tyga is coming to Malaysia for the first time and he's ready to make 
         it “Bedrock”! Tyga, which stands for Thank You God Always brings his arsenal of hits, from ‘Rack City’, to 
         ‘Ice Cream Man’ to ‘Taste’ from the blast from the radio to his live shows. You know you’re in for a party with him taking 
@@ -68,11 +81,11 @@ const EventsIndividual = () => {
     </div>
     <div className='flex flex-col self-center items-center '>
         <p className='sub_heading_events'>date</p>
-        <p className='sub_text'>9 august 2023</p>
+        <p className='sub_text'>9 August 2023</p>
     </div>
     <div className='flex flex-col self-center items-center'>
         <p className='sub_heading_events'>Venue</p>
-        <p className='sub_text'>zepp kuala lumpur</p>
+        <p className='sub_text'>Zepp Kuala Lumpur</p>
     </div>
     <div className='flex flex-col self-center items-center'>
         <p className='sub_heading_events'>rating</p>
@@ -83,15 +96,16 @@ const EventsIndividual = () => {
     <div className='  gap-4 mb-11 md:mb-24'>
 
         <div id='container' className=' flex flex-col overflow-x-hidden gap-4 order-2 md:order-1'>
-            <div  className='flex gap-6 self-center w-[60%] '>
-            <img src="/event_individual_2.png" className='w-100%'  alt='img'/>
-            <img src="/event_individual_3.png" className='mr-24'  alt='img'/>
+            <div  className='flex gap-6 self-center md:w-[60%] w-[90%]'>
+                <div className=' flex gap-11 self-center mr-24'>
+            <img src="/event_individual_2.png" className=''  alt='img'/>
+            <img src="/event_individual_3.png" className=' image_01'  alt='img'/>
             </div>
-
+            </div>
         </div>
         <div className='flex justify-center gap-4 mt-6'>
-        <button className='' onClick={()=>{sideScroll('left',25,300,900)}}>  <img className='w-12 md:w-full'  src='/left_arrow_event.svg'/></button>
-          <button className='' onClick={()=>{sideScroll('right',25,300,1200)}}>  <img className='w-12 md:w-full' src='/right_arrow_event.svg'/></button>
+        <button className='' onClick={()=>{moveImageRight()}}>  <img className='w-12 md:w-full'  src='/left_arrow_event.svg'/></button>
+          <button className='' onClick={()=>{moveImageLeft()}}>  <img className=' w-12 md:w-full' src='/right_arrow_event.svg'/></button>
         </div>
      
     </div>
