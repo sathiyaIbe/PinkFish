@@ -14,9 +14,10 @@ const Contact = () => (
           <h1 className="contact_sub_header mt-6">email</h1>
           <p className="contact_text mt-3">info@pinkfishfestival.com</p>
           <h1 className="contact_sub_header mt-3 mb-3">Socials</h1>
-          <p className="contact_text ">Instagram</p>
-          <p className="contact_text ">Youtube</p>
-          <p className="contact_text ">Facebook</p>
+          <a href='https://www.instagram.com/pinkfishfestival/' target="_blank" className="contact_text ">Instagram</a>
+           <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank" className="contact_text ">Youtube</a>
+          <a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className="contact_text ">Facebook</a>
+          <a href=' https://www.tiktok.com/@pinkfishfestival' target="_blank" className="contact_text ">TikTok</a>
         </div>
 
       </div>
@@ -55,9 +56,11 @@ const Contact = () => (
 <p className="contact_text mt-3">info@pinkfishfestival.com</p>
 <h1 className="contact_sub_header mt-3 mb-3">Socials</h1>
 <div className='flex flex-col gap-2'>
-<p className="contact_text_1 underline text-center">Instagram</p>
-<p className="contact_text_1 underline text-center">Youtube</p>
-<p className="contact_text_1 underline text-center">Facebook</p>
+<a href='https://www.instagram.com/pinkfishfestival/' target="_blank" className="contact_text_1 underline text-center ">Instagram</a>
+           <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank" className="contact_text_1 underline text-center ">Youtube</a>
+          <a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className="contact_text_1 underline text-center ">Facebook</a>
+          <a href=' https://www.tiktok.com/@pinkfishfestival' target="_blank" className="contact_text_1 underline text-center ">TikTok</a>
+
 </div>
 </div>
 </div>
