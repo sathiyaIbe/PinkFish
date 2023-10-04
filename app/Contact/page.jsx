@@ -14,9 +14,9 @@ const Contact = () => (
           <h1 className="contact_sub_header mt-6">email</h1>
           <p className="contact_text mt-3">info@pinkfishfestival.com</p>
           <h1 className="contact_sub_header mt-3 mb-3">Socials</h1>
-          <p className="contact_text">Instagram</p>
-          <p className="contact_text">Youtube</p>
-          <p className="contact_text">Facebook</p>
+          <p className="contact_text ">Instagram</p>
+          <p className="contact_text ">Youtube</p>
+          <p className="contact_text ">Facebook</p>
         </div>
 
       </div>
@@ -54,9 +54,11 @@ const Contact = () => (
 <h1 className="contact_sub_header mt-6">email</h1>
 <p className="contact_text mt-3">info@pinkfishfestival.com</p>
 <h1 className="contact_sub_header mt-3 mb-3">Socials</h1>
-<p className="contact_text text-center">Instagram</p>
-<p className="contact_text text-center">Youtube</p>
-<p className="contact_text text-center">Facebook</p>
+<div className='flex flex-col gap-2'>
+<p className="contact_text_1 underline text-center">Instagram</p>
+<p className="contact_text_1 underline text-center">Youtube</p>
+<p className="contact_text_1 underline text-center">Facebook</p>
+</div>
 </div>
 </div>
     </div>
