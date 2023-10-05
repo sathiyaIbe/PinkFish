@@ -14,12 +14,13 @@ const Contact = () => (
           <h1 className="contact_sub_header mt-6">email</h1>
           <p className="contact_text mt-3">info@pinkfishfestival.com</p>
           <h1 className="contact_sub_header mt-3 mb-3">Socials</h1>
+          <div className='flex flex-col'>
           <a href='https://www.instagram.com/pinkfishfestival/' target="_blank" className="contact_text ">Instagram</a>
            <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank" className="contact_text ">Youtube</a>
           <a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className="contact_text ">Facebook</a>
           <a href=' https://www.tiktok.com/@pinkfishfestival' target="_blank" className="contact_text ">TikTok</a>
         </div>
-
+        </div>
       </div>
 
       <div className="md:basis-1/2 mt-11 md:mt-0 ">

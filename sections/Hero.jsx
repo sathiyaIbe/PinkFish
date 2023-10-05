@@ -10,7 +10,7 @@ const Hero = () => (
         Zepp KL
         </h1> */}
         <div className='md:basis-3/4 flex justify-center mb-11'>
-        <h1 className='hero_heading pt-3 mb-5 md:mb-24 max-w-[72%] text-center   '>pinkfish live
+        <h1 className='hero_heading pt-3 mb-11 md:mb-24 max-w-[90%] text-center   '>pinkfish live
         
         </h1>
         </div>

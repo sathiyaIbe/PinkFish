@@ -39,11 +39,10 @@ const Event = () => {
                     <hr  className='hr_line_footer'/>
                     <p className='date_event_main_text'>9 august 2023</p>
                     <h1 className='event_section_header'>TYGA LIVE IN KL</h1>
-                    <p className='event_section_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p className='event_section_text'>Compton-born Tyga is coming to Malaysia for the first time and he's ready to make it “Bedrock”! Tyga, which stands for 
+                    Thank You God Always brings his arsenal of hits, from ‘Rack City’, to ‘Ice Cream Man’ to ‘Taste’ from the blast from the radio to his live shows. You know you’re in for 
+                    a party with him taking the stage this Wednesday, the 8th of August 2023 in Zepp KL!
+
                     </p>
                     <Link href='EventsIndividual' className='soldout_ticket_event_main w-fit'>
                     <button className="  flex  p-1 " type="button">Sold Out

@@ -1,9 +1,13 @@
 /* eslint-disable */
 'use client'
+import { useState } from 'react';
+import Modal from '../../components/Modal';
 import '../../styles/contact.css';
 import '../../styles/home.css';
 import gsap from 'gsap';
 const EventsIndividual = () => {
+    const [active, setActive] = useState(false);
+    const [url,setUrl]=useState('')
 
     function sideScroll(direction,speed,distance,step){
         var element =   document.getElementById('container')
@@ -44,6 +48,52 @@ const EventsIndividual = () => {
     
       var tl = gsap.timeline();
       tl.to(e, {scale: 1.05, duration: .5, ease: "power1.inOut"});
+    }
+
+    function selectImage(e){
+        setActive(true)
+        setUrl(e)
+    }
+
+    const Model=()=>{
+        return(
+                <>
+                  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+                
+                  <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+                    <div class="flex min-h-[90%] items-center justify-center p-4 text-center sm:items-center sm:p-0">
+                
+                      <div class="relative transform overflow-hidden rounded-lg bg-transparent min-w-[90vw] text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                        <div class="bg-transparent px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div className='flex justify-end w-[100%]'>
+                            <div onClick={()=>{setActive(false)}} class="mb-3">
+                             X
+                            </div>
+                            </div>
+                          <div class="sm:flex sm:items-end text-black">
+                         
+                            
+                           
+                            {/* <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                              <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Deactivate account</h3>
+                              <div class="mt-2">
+                                <p class="text-sm text-gray-500">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</p>
+                              </div>
+                            </div> */}
+                            <div className='w-[100%]'>
+                                    <img   src={url} className='w-[100%] image_118'/>
+                                    </div>
+                          </div>
+                        </div>
+                        {/* <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                          <button type="button" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto">Deactivate</button>
+                          <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
+                        </div> */}
+                      </div>
+                    </div>
+                  </div>
+                  </>  
+        )
     }
 
   return (
@@ -94,18 +144,27 @@ const EventsIndividual = () => {
 </div>
 
     <div className='  gap-4 mb-11 md:mb-24'>
-
-        <div id='container' className=' flex flex-col overflow-x-hidden gap-4 order-2 md:order-1'>
-            <div  className='flex gap-6 self-center md:w-[60%] w-[90%]'>
-                <div className=' flex gap-11 self-center mr-24'>
-            <img src="/event_individual_2.png" className=''  alt='img'/>
-            <img src="/event_individual_3.png" className=' image_01'  alt='img'/>
+{/* <div className='gallery_scroll_container flex gap-24 p-24'>
+<img src="/event_individual_2.png" className=''  alt='img'/>
+<img src="/event_individual_3.png" className='pr-24 '  alt='img'/>
+</div> */}
+        <div id='container' className=' flex flex-col overflow-x-scroll gap-4 order-2 md:order-1'>
+            <div  className=' flex gap-6 self-center md:w-[60%] w-[90%]'>
+                <div className=' flex flex-col justify-end self-center md:min-w-[120vw] min-w-[200vw] md:mr-96'>
+                    <div className='max-w-[90%] self-center flex gap-3 md:mr-72'>
+                    <div className=''>
+            <img src="/event_individual_2.png" className='w-[100%]'  alt='img'/>
+            </div>
+       <div className=''>
+            <img src="/event_individual_3.png" className='w-[100%]  '  alt='img'/>
+            </div>
+            </div>
             </div>
             </div>
         </div>
-        <div className='flex justify-center gap-4 mt-6'>
-        <button className='' onClick={()=>{moveImageRight()}}>  <img className='w-12 md:w-full'  src='/left_arrow_event.svg'/></button>
-          <button className='' onClick={()=>{moveImageLeft()}}>  <img className=' w-12 md:w-full' src='/right_arrow_event.svg'/></button>
+        <div className='flex  justify-center gap-4 mt-6'>
+        <button className='' onClick={()=>{sideScroll("left",2,900,900)}}>  <img className='w-12 md:w-full'  src='/left_arrow_event.svg'/></button>
+          <button className='' onClick={()=>{sideScroll("right",2,900,900)}}>  <img className=' w-12 md:w-full' src='/right_arrow_event.svg'/></button>
         </div>
      
     </div>
@@ -123,15 +182,17 @@ const EventsIndividual = () => {
 
     </div>
     <div className='flex gap-4 self-center  md:hidden'>
-        <img  onMouseOver={(e)=>mouseDowns(".image_117")} onMouseLeave={(e)=>mouseOut(".image_117")} src='/Gallery/gallery_event_1_mob.png' className='image_117 object-none'/>
-        <img  onMouseOver={(e)=>mouseDowns(".image_116")} onMouseLeave={(e)=>mouseOut(".image_116")} src='/Gallery/gallery_event_2_mob.png' className='object-none image_116'/>
+        <img onClick={()=>selectImage('/Gallery/gallery_event_1_mob.png')} onMouseOver={(e)=>mouseDowns(".image_117")} onMouseLeave={(e)=>mouseOut(".image_117")} src='/Gallery/gallery_event_1_mob.png' className='image_117 object-none'/>
+        <img onClick={()=>selectImage('/Gallery/gallery_event_2_mob.png')} onMouseOver={(e)=>mouseDowns(".image_116")} onMouseLeave={(e)=>mouseOut(".image_116")} src='/Gallery/gallery_event_2_mob.png' className='object-none image_116'/>
 
     </div>
     <div className='flex gap-4 self-center items-start   md:hidden '>
-        <img  onMouseOver={(e)=>mouseDowns(".image_118")} onMouseLeave={(e)=>mouseOut(".image_118")} src='/Gallery/gallery_event_3_mob.png' className='object-none image_118'/>
-        <img  onMouseOver={(e)=>mouseDowns(".image_119")} onMouseLeave={(e)=>mouseOut(".image_119")} src='/Gallery/gallery_event_4_mob.png' className='object-none image_119'/>
-
+        <img onClick={()=>selectImage('/Gallery/gallery_event_3_mob.png')} onMouseOver={(e)=>mouseDowns(".image_118")} onMouseLeave={(e)=>mouseOut(".image_118")} src='/Gallery/gallery_event_3_mob.png' className='object-none image_118'/>
+        <img onClick={()=>selectImage('/Gallery/gallery_event_4_mob.png')} onMouseOver={(e)=>mouseDowns(".image_119")} onMouseLeave={(e)=>mouseOut(".image_119")} src='/Gallery/gallery_event_4_mob.png' className='object-none image_119'/>
     </div>
+   
+{active&&Model()}
+
     
     </div>
 
