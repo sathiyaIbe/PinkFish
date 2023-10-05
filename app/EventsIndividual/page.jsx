@@ -1,7 +1,6 @@
 /* eslint-disable */
 'use client'
 import { useState } from 'react';
-import Modal from '../../components/Modal';
 import '../../styles/contact.css';
 import '../../styles/home.css';
 import gsap from 'gsap';
