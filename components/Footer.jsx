@@ -44,6 +44,9 @@ const Footer = () => (
           <Link href="/Contact">
           <p className="cursor-pointer icon_text  mt-2">Contact </p>
           </Link>
+          <a href="https://master--comforting-cuchufli-1c59c6.netlify.app/" target='_blank'>
+          <p className="cursor-pointer icon_text  mt-2">Pinkfish </p>
+          </a>
         </div>
         <div className="flex flex-col gap-5 md:items-start items-center ">
           <h1 className="address_title icon_text">Follow us</h1>
