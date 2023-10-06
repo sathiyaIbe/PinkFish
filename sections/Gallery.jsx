@@ -212,8 +212,8 @@ return(
   toggler={active}
   sources={[
     '/Gallery/gallery_1_mob_full.jpg',
-       '/Gallery/gallery_2_mob_full.jpg',
        '/Gallery/gallery_3_mob_full.jpg',
+       '/Gallery/gallery_2_mob_full.jpg',
        '/Gallery/gallery_4_mob_full.jpg',
        '/Gallery/gallery_5_mob_full.jpg',
        '/Gallery/gallery_6_mob_full.jpg',
