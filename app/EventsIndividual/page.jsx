@@ -4,9 +4,13 @@ import { useState } from 'react';
 import '../../styles/contact.css';
 import '../../styles/home.css';
 import gsap from 'gsap';
+import FsLightbox from "fslightbox-react";
 const EventsIndividual = () => {
     const [active, setActive] = useState(false);
     const [url,setUrl]=useState('')
+    const [toggler, setToggler] = useState(false);
+    const [slide,setSlide]=useState()
+    const [slideMob,setSlideMob]=useState()
 
     function sideScroll(direction,speed,distance,step){
         var element =   document.getElementById('container')
@@ -142,28 +146,28 @@ const EventsIndividual = () => {
     </div>
 </div>
 
-    <div className='  gap-4 mb-11 md:mb-24'>
+    <div className='  gap-4 mb-11 md:mb-24 '>
 {/* <div className='gallery_scroll_container flex gap-24 p-24'>
 <img src="/event_individual_2.png" className=''  alt='img'/>
 <img src="/event_individual_3.png" className='pr-24 '  alt='img'/>
 </div> */}
         <div id='container' className=' flex flex-col overflow-x-scroll gap-4 order-2 md:order-1'>
-            <div  className=' flex gap-6 self-center md:w-[60%] w-[90%]'>
-                <div className=' flex flex-col justify-end self-center md:min-w-[120vw] min-w-[200vw] md:mr-96'>
-                    <div className='max-w-[90%] self-center flex gap-3 md:mr-72'>
-                    <div className=''>
-            <img src="/event_individual_2.png" className='w-[100%]'  alt='img'/>
+            <div  className=' flex gap-6  '>
+                <div className=' flex flex-col    min-w-[200vw] '>
+                    <div className=' max-w[90%]  flex gap-3 md:gap-1 '>
+                    <div className='min-w-[100vw] flex flex-col'>
+            <img src="/event_individual_2.png" className='md:w-[50%] w-[80%] self-center'  alt='img'/>
             </div>
-       <div className=''>
-            <img src="/event_individual_3.png" className='w-[100%]  '  alt='img'/>
+            <div className='min-w-[100vw] flex flex-col'>
+            <img src="/event_individual_3.png" className='md:w-[50%]  w-[80%] self-center'  alt='img'/>
             </div>
             </div>
             </div>
             </div>
         </div>
         <div className='flex  justify-center gap-4 mt-6'>
-        <button className='' onClick={()=>{sideScroll("left",2,900,900)}}>  <img className='w-12 md:w-full'  src='/left_arrow_event.svg'/></button>
-          <button className='' onClick={()=>{sideScroll("right",2,900,900)}}>  <img className=' w-12 md:w-full' src='/right_arrow_event.svg'/></button>
+        <button className='' onClick={()=>{sideScroll("left",2,900,1900)}}>  <img className='w-12 md:w-full'  src='/left_arrow_event.svg'/></button>
+          <button className='' onClick={()=>{sideScroll("right",2,900,1900)}}>  <img className=' w-12 md:w-full' src='/right_arrow_event.svg'/></button>
         </div>
      
     </div>
@@ -171,26 +175,50 @@ const EventsIndividual = () => {
     <div className='flex flex-col gap-4 text-white mb-11'>
     <h1 className='gallery_event text-center'>Gallery</h1>
     <div className='flex gap-4 self-center '>
-        <img  onMouseOver={(e)=>mouseDowns(".image_112")} onMouseLeave={(e)=>mouseOut(".image_112")} src='/Gallery/gallery_event_1.png' className='image_112 object-none hidden md:block'/>
-        <img  onMouseOver={(e)=>mouseDowns(".image_113")} onMouseLeave={(e)=>mouseOut(".image_113")} src='/Gallery/gallery_event_2.png' className='object-none image_113 hidden md:block'/>
+        <img  onClick={() => {setToggler(!toggler), setSlide(1)}}  onMouseOver={(e)=>mouseDowns(".image_112")} onMouseLeave={(e)=>mouseOut(".image_112")} src='/Gallery/gallery_event_1.png' className='image_112 object-none hidden md:block'/>
+        <img  onClick={() => {setToggler(!toggler), setSlide(2)}} onMouseOver={(e)=>mouseDowns(".image_113")} onMouseLeave={(e)=>mouseOut(".image_113")} src='/Gallery/gallery_event_2.png' className='object-none image_113 hidden md:block'/>
 
     </div>
     <div className='flex gap-4 self-center items-start  '>
-        <img  onMouseOver={(e)=>mouseDowns(".image_114")} onMouseLeave={(e)=>mouseOut(".image_114")} src='/Gallery/gallery_event_3.png' className='object-none image_114  hidden md:block'/>
-        <img  onMouseOver={(e)=>mouseDowns(".image_115")} onMouseLeave={(e)=>mouseOut(".image_115")} src='/Gallery/gallery_event_4.png' className='object-none image_115  hidden md:block'/>
+        <img  onClick={() => {setToggler(!toggler), setSlide(3)}}  onMouseOver={(e)=>mouseDowns(".image_114")} onMouseLeave={(e)=>mouseOut(".image_114")} src='/Gallery/gallery_event_3.png' className='object-none image_114  hidden md:block'/>
+        <img  onClick={() => {setToggler(!toggler), setSlide(4)}} onMouseOver={(e)=>mouseDowns(".image_115")} onMouseLeave={(e)=>mouseOut(".image_115")} src='/Gallery/gallery_event_4.png' className='object-none image_115  hidden md:block'/>
 
     </div>
     <div className='flex gap-4 self-center  md:hidden'>
-        <img onClick={()=>selectImage('/Gallery/gallery_event_1_mob.png')} onMouseOver={(e)=>mouseDowns(".image_117")} onMouseLeave={(e)=>mouseOut(".image_117")} src='/Gallery/gallery_event_1_mob.png' className='image_117 object-none'/>
-        <img onClick={()=>selectImage('/Gallery/gallery_event_2_mob.png')} onMouseOver={(e)=>mouseDowns(".image_116")} onMouseLeave={(e)=>mouseOut(".image_116")} src='/Gallery/gallery_event_2_mob.png' className='object-none image_116'/>
+        <img onClick={() => {setActive(!active), setSlideMob(1)}} onMouseOver={(e)=>mouseDowns(".image_117")} onMouseLeave={(e)=>mouseOut(".image_117")} src='/Gallery/gallery_event_1_mob.png' className='image_117 object-none'/>
+        <img onClick={() => {setActive(!active), setSlideMob(2)}} onMouseOver={(e)=>mouseDowns(".image_116")} onMouseLeave={(e)=>mouseOut(".image_116")} src='/Gallery/gallery_event_2_mob.png' className='object-none image_116'/>
 
     </div>
     <div className='flex gap-4 self-center items-start   md:hidden '>
-        <img onClick={()=>selectImage('/Gallery/gallery_event_3_mob.png')} onMouseOver={(e)=>mouseDowns(".image_118")} onMouseLeave={(e)=>mouseOut(".image_118")} src='/Gallery/gallery_event_3_mob.png' className='object-none image_118'/>
-        <img onClick={()=>selectImage('/Gallery/gallery_event_4_mob.png')} onMouseOver={(e)=>mouseDowns(".image_119")} onMouseLeave={(e)=>mouseOut(".image_119")} src='/Gallery/gallery_event_4_mob.png' className='object-none image_119'/>
+        <img onClick={() => {setActive(!active), setSlideMob(3)}} onMouseOver={(e)=>mouseDowns(".image_118")} onMouseLeave={(e)=>mouseOut(".image_118")} src='/Gallery/gallery_event_3_mob.png' className='object-none image_118'/>
+        <img onClick={() => {setActive(!active), setSlideMob(4)}} onMouseOver={(e)=>mouseDowns(".image_119")} onMouseLeave={(e)=>mouseOut(".image_119")} src='/Gallery/gallery_event_4_mob.png' className='object-none image_119'/>
     </div>
-   
-{active&&Model()}
+    <div className='hidden md:block'>
+		
+			 <FsLightbox
+				toggler={toggler}
+				sources={[
+					'/Gallery/gallery_event_1.png',
+					'/Gallery/gallery_event_2.png',
+					'/Gallery/gallery_event_3.png',
+          '/Gallery/gallery_event_4.png'
+				]}
+        slide={slide}
+			/>
+		 </div>
+     <div className=' md:hidden'>
+		
+    <FsLightbox
+     toggler={active}
+     sources={[
+       '/Gallery/gallery_event_1_mob.png',
+       '/Gallery/gallery_event_2_mob.png',
+       '/Gallery/gallery_event_3_mob.png',
+       '/Gallery/gallery_event_4_mob.png'
+     ]}
+     slide={slideMob}
+   />
+  </div>
 
     
     </div>
